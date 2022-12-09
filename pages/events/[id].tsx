@@ -6,6 +6,7 @@ import EventLogistics from '../../components/Event/Logistic';
 import EventContent from '../../components/Event/Content';
 import ErrorAlert from '../../components/Alerts/Error';
 import { getEventById } from '../../utils';
+import HeadTag from '../../components/common/Head';
 
 function EventDetailPage() {
   const router = useRouter();
@@ -23,6 +24,8 @@ function EventDetailPage() {
 
   return (
     <Fragment>
+      <HeadTag title={event.title} />
+
       <EventSummary title={event.title} />
       <EventLogistics event={event} />
       <EventContent>

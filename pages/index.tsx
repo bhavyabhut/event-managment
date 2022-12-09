@@ -1,3 +1,4 @@
+import HeadTag from '../components/common/Head';
 import EventList from '../components/Event/List';
 import { getFeaturedEvents } from '../utils';
 
@@ -6,6 +7,7 @@ function HomePage() {
 
   return (
     <div>
+      <HeadTag title='Featured Events' />
       <EventList events={featuredEvents} />
     </div>
   );

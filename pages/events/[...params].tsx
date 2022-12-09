@@ -6,6 +6,7 @@ import Button from '../../components/Button';
 import { getFilteredEvents } from '../../utils';
 import ResultsTitle from '../../components/ResultTitle';
 import EventList from '../../components/Event/List';
+import HeadTag from '../../components/common/Head';
 
 function FilteredEventsPage() {
   const router = useRouter();
@@ -64,6 +65,7 @@ function FilteredEventsPage() {
 
   return (
     <Fragment>
+      <HeadTag title='Filtered Events' />
       <ResultsTitle date={date} />
       <EventList events={filteredEvents} />
     </Fragment>
