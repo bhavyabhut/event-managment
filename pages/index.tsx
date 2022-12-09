@@ -1,16 +1,14 @@
-import Button from '../components/Button';
-import List from '../components/Event/List';
-import Header from '../components/Header';
-import Search from '../components/Search/Search';
+import EventList from '../components/Event/List';
+import { getFeaturedEvents } from '../utils';
 
-export default function AllEvents() {
+function HomePage() {
+  const featuredEvents = getFeaturedEvents();
+
   return (
-    <>
-      <h1>All Events</h1>
-      <Header />
-      <Search />
-      <Button />
-      <List />
-    </>
+    <div>
+      <EventList events={featuredEvents} />
+    </div>
   );
 }
+
+export default HomePage;
