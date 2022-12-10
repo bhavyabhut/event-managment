@@ -1,5 +1,6 @@
 import HeadTag from '../components/common/Head';
 import EventList from '../components/Event/List';
+import EventSummary from '../components/Event/Summary';
 import { getFeaturedEvents } from '../utils';
 
 function HomePage() {
@@ -8,6 +9,7 @@ function HomePage() {
   return (
     <div>
       <HeadTag title='Featured Events' />
+      <EventSummary small title='Featured Events' />
       <EventList events={featuredEvents} />
     </div>
   );
