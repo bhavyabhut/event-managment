@@ -1,18 +1,21 @@
-import { DUMMY_EVENTS } from '../data';
-import { Params } from '../types';
+import fetchEvents from '../apis';
+import { Events, Params } from '../types';
 
-export function getFeaturedEvents() {
-  return DUMMY_EVENTS.filter((event) => event.isFeatured);
+export async function getFeaturedEvents() {
+  const events = await getAllEvents();
+
+  return events.filter((event) => event.isFeatured);
 }
 
-export function getAllEvents() {
-  return DUMMY_EVENTS;
+export async function getAllEvents() {
+  return (await fetchEvents()) as Events;
 }
 
-export function getFilteredEvents(params: Params) {
+export async function getFilteredEvents(params: Params) {
   const { year, month } = params;
+  const events = await getAllEvents();
 
-  let filteredEvents = DUMMY_EVENTS.filter((event) => {
+  let filteredEvents = events.filter((event) => {
     const eventDate = new Date(event.date);
     return (
       eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
@@ -22,6 +25,7 @@ export function getFilteredEvents(params: Params) {
   return filteredEvents;
 }
 
-export function getEventById(id: string) {
-  return DUMMY_EVENTS.find((event) => event.id === id);
+export async function getEventById(id: string) {
+  const events = await getAllEvents();
+  return events.find((event) => event.id === id);
 }

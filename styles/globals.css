@@ -31,3 +31,8 @@ ul {
   margin: auto;
   text-align: center;
 }
+
+#nprogress .bar {
+  height: 5px !important;
+  background: #03be9f !important;
+}
