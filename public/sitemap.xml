@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://event-managment-next.vercel.app/</loc>
+	<lastmod>2022-12-14T22:41:13+01:00</lastmod>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events</loc>
+	<lastmod>2022-12-14T22:41:13+01:00</lastmod>
+	<priority>0.2</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events/e2</loc>
+	<lastmod>2022-12-14T22:41:13+01:00</lastmod>
+	<priority>0.1</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events/e3</loc>
+	<lastmod>2022-12-14T22:41:13+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events/e4</loc>
+	<lastmod>2022-12-14T22:41:13+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events/e6</loc>
+	<lastmod>2022-12-14T22:41:13+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events/e1</loc>
+	<lastmod>2022-12-14T22:41:15+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://event-managment-next.vercel.app/events/e5</loc>
+	<lastmod>2022-12-14T22:41:15+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
