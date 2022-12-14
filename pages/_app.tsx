@@ -1,6 +1,7 @@
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import type { AppProps } from 'next/app';
+import Script from 'next/script';
 
 import Layout from '../Layout';
 
@@ -20,8 +21,26 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Script
+      id='googletagmanager'
+        strategy='lazyOnload'
+        src={`https://www.googletagmanager.com/gtag/js?id=G-LXTVRQQRSX`}
+      />
+
+      <Script strategy='lazyOnload' id='googletagmanager1'>
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LXTVRQQRSX', {
+            page_path: window.location.pathname,
+            });
+        `}
+      </Script>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
