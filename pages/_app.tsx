@@ -28,7 +28,8 @@ export default function App({ Component, pageProps }: AppProps) {
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=G-LXTVRQQRSX`}
       />
-
+<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301119817973342"
+     crossOrigin="anonymous"/>
       <Script strategy='lazyOnload' id='googletagmanager1'>
         {`
             window.dataLayer = window.dataLayer || [];
