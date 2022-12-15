@@ -24,13 +24,16 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
-        id='googletagmanager'
-        strategy='lazyOnload'
+        id='google-analytics'
+        strategy='afterInteractive'
         src={`https://www.googletagmanager.com/gtag/js?id=G-LXTVRQQRSX`}
       />
-<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301119817973342"
-     crossOrigin="anonymous"/>
-      <Script strategy='lazyOnload' id='googletagmanager1'>
+      <Script
+        async
+        src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301119817973342'
+        crossOrigin='anonymous'
+      />
+      <Script strategy='afterInteractive' id='google-analytics'>
         {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -45,6 +48,28 @@ export default function App({ Component, pageProps }: AppProps) {
           name='google-site-verification'
           content='chd242Usl4NJ6ZOOkJvjmWlPyfs_Mj0zPxKD-Z4oQPI'
         />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-LXTVRQQRSX`}
+        />
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301119817973342'
+          crossOrigin='anonymous'
+        />
+
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-LXTVRQQRSX'
+        ></script>
+        <script>
+          {` window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LXTVRQQRSX');
+          `}
+        </script>
       </Head>
       <Layout>
         <Component {...pageProps} />
