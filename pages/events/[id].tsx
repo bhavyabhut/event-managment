@@ -31,7 +31,7 @@ function EventDetailPage({ event }: Props) {
   }
   return (
     <Fragment>
-      <HeadTag title={event.title} />
+      <HeadTag title={event.title} description={event.description} />
       <EventSummary title={event.title} />
       <EventLogistics event={event} />
       <EventContent>

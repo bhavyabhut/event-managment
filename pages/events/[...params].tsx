@@ -56,7 +56,7 @@ function FilteredEventsPage({
 
   return (
     <>
-      <HeadTag title='Filtered Events' />
+      <HeadTag title='Next events | Filtered Events' description='List of all filtered events...' />
       <ResultsTitle date={date} />
       <EventList events={filteredEvents} />
     </>

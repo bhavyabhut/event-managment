@@ -25,7 +25,7 @@ function AllEventsPage({ events }: Props) {
 
   return (
     <Fragment>
-      <HeadTag title='All Events' />
+      <HeadTag title='Next events | All Events' description='All events where you can find the best events for you...' />
       <EventsSearch onSearch={findEventsHandler} />
       <EventList events={events} />
     </Fragment>

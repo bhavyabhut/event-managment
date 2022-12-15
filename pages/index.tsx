@@ -15,7 +15,7 @@ type StaticProps = GetStaticProps<{
 function HomePage({ featuredEvents }: Props) {
   return (
     <div>
-      <HeadTag title='Featured Events' />
+      <HeadTag title='Next events | Featured Events' description='List of all featured events...' />
       <EventSummary small title='Featured Events' />
       <EventList events={featuredEvents} />
     </div>
