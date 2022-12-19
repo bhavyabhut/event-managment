@@ -57,10 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
           src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301119817973342'
           crossOrigin='anonymous'
         />
-        <script
-          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301119817973342'
-          crossOrigin='anonymous'
-        />
+        
       </Head>
       <Layout>
         <Component {...pageProps} />
