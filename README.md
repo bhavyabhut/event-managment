@@ -1,5 +1,4 @@
-# event-managment
-## Event managment system
+# Event managment system
 
 [Demo](https://event-managment-next.vercel.app/)
 
