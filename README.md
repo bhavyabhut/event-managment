@@ -5,4 +5,4 @@
 #### Technology stack
 - Next.js
 - Typescript
-- Firebase
+- Firebase.
